@@ -8,11 +8,11 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"/src/spec/features"},
-		plugin = {"pretty","html:target/report/cucumber-report",  "json:target/report/cucumber.json"},
+		features = {"src/spec/features"},
+		plugin = {"pretty","html:target/report/cucumber-report.html",  "json:target/report/cucumber.json"},
 		//glue = {"src.test.java.com.e2eTest.automation.step_definitions"},
 		tags = ("@login_valide_credential"),
-		monochrome = true ,
+		monochrome = true, 
 		snippets = CAMELCASE
 		)
 

@@ -37,7 +37,7 @@ public class Setup {
 		switch (browser) {
 		case "chrome":
 			ChromeOptions ChromeOptions = new ChromeOptions();
-			ChromeOptions.addArguments("['start-maximized']");
+			ChromeOptions.addArguments("--start-maximized");
 			ChromeOptions.addArguments("--disable-search-engine-choice-screen");
 			setDriver(new ChromeDriver(ChromeOptions));
 			break;
